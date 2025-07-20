@@ -18,7 +18,7 @@ public class ConfigurationManager {
         return configurationManager;
     }
 
-    public Configuration getConfiguration() {
+    public static Configuration getConfiguration() {
         return configuration;
     }
     public void loadConfiguration(String filePath) {

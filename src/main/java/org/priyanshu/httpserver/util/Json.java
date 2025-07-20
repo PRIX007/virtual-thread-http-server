@@ -11,7 +11,7 @@ public class Json {
     private static ObjectMapper defaultObjectMapper() {
         ObjectMapper mapper = new ObjectMapper();
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
-        return objectMapper;
+        return mapper;
     }
 
     public static JsonNode parse(String jsonStr) throws JsonProcessingException {

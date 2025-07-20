@@ -7,8 +7,8 @@ public class HttpServer {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
 
-        ConfigurationManager configurationManager = ConfigurationManager.getInstance();
-        Configuration configuration = configurationManager.getConfiguration();
+        ConfigurationManager.getInstance().loadConfiguration("src/main/resources/http.json");
+        Configuration configuration = ConfigurationManager.getConfiguration();
 
         System.out.println(configuration.getPort());
         System.out.println(configuration.getWebroot());
